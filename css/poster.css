@@ -28,8 +28,8 @@ html {
 }
 .movie-poster-container > *:not(.movie-info-title){
     opacity: 0;
-    animation: fade-in 3.5s ease-in-out forwards;
-    animation-delay: 1s;
+    animation: fade-in 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes fade-in {
@@ -151,4 +151,53 @@ footer ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #777;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(133, 121, 121, 0.7);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: antiquewhite;
+    margin: 5% auto;
+    padding: 2rem;
+    width: 600px;
+    height: 800px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+.movie-poster-modal {
+    width: 300px;
+
+    
+}
+
+.movie-poster {
+    cursor: pointer;
+
 }
